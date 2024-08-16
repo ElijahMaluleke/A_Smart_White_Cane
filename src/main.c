@@ -320,11 +320,11 @@ static bool getDistanceTopSensor(float* dist)
 	// reset counter
 	tCount = 0;
 	while(gpio_pin_get(gpio1_dev, ECHO_TOP_SENSOR));
-	sensors_status = true;
 	
 	float duration = countToUs*tCount;
 	float distance = (double)duration*0.017;
 	*dist = distance;
+	sensors_status = true;
 	if((double)distance < 400.0) {
 		return true;
 	}
@@ -347,11 +347,11 @@ static bool getDistanceLeftSensor(float* dist)
 	// reset counter
 	tCount = 0;
 	while(gpio_pin_get(gpio1_dev, ECHO_LEFT_SENSOR));
-	sensors_status = true;
 	
 	float duration = countToUs*tCount;
 	float distance = (double)duration*0.017;
 	*dist = distance;
+	sensors_status = true;
 	if((double)distance < 400.0) {
 		return true;
 	}
@@ -374,11 +374,11 @@ static bool getDistanceFrontSensor(float* dist)
 	// reset counter
 	tCount = 0;
 	while(gpio_pin_get(gpio1_dev, ECHO_FRONT_SENSOR));
-	sensors_status = true;
 	
 	float duration = countToUs*tCount;
 	float distance = (double)duration*0.017;
 	*dist = distance;
+	sensors_status = true;
 	if((double)distance < 400.0) {
 		return true;
 	}
@@ -401,11 +401,11 @@ static bool getDistanceRightSensor(float* dist)
 	// reset counter
 	tCount = 0;
 	while(gpio_pin_get(gpio1_dev, ECHO_RIGHT_SENSOR));
-	sensors_status = true;
 	
 	float duration = countToUs*tCount;
 	float distance = (double)duration*0.017;
 	*dist = distance;
+	sensors_status = true;
 	if((double)distance < 400.0) {
 		return true;
 	}

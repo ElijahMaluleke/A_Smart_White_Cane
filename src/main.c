@@ -449,16 +449,16 @@ static void ProximityOfObstacles(uint32_t Distance, uint8_t Sensor)
 			else if((Distance >= 20)&&(Distance <= 30)){
 				MotorVibrations(1 , 14);
 			}
-			else if((Distance >= 40)&&(Distance <= 50)){
+			else if((Distance >= 30)&&(Distance <= 40)){
 				MotorVibrations(1 , 12);
 			}
-			else if((Distance >= 50)&&(Distance <= 60)){
+			/*else if((Distance >= 40)&&(Distance <= 50)){
 				MotorVibrations(1 , 10);
 			}
-			else if((Distance >= 60)&&(Distance <= 70)){
+			else if((Distance >= 60)&&(Distance <= 60)){
 				MotorVibrations(1 , 8);
 			}
-			else if((Distance >= 70)&&(Distance <= 80)){
+			else if((Distance >= 70)&&(Distance <= 70)){
 				MotorVibrations(1 , 6);
 			}
 			else if((Distance >= 80)&&(Distance <= 90)){
@@ -466,7 +466,7 @@ static void ProximityOfObstacles(uint32_t Distance, uint8_t Sensor)
 			}
 			if((Distance >= 90)&&(Distance <= 100)){
 				MotorVibrations(1 , 18);
-			}
+			}*/
 			else{
 			}
 		break;
